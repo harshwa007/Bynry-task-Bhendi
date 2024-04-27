@@ -1,0 +1,52 @@
+
+[
+  {
+    "id": 1,
+    "name": "Brian Lara",
+    "age": 22,
+    "location": "India",
+    "occupation": "Frontend Developer",
+    "interests": "Software",
+    "address": "Kolhapur, Maharashtra",
+    "image": "https://plus.unsplash.com/premium_photo-1674777843203-da3ebb9fbca0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZSUyMGltYWdlfGVufDB8fDB8fHww",
+    "instagram": "brian-lara/",
+    "linkedin": "brianlara"
+   },
+   {
+     "id": 2,
+     "name": "John Doe",
+     "age": 20,
+     "location": "New York",
+     "occupation": "Software Engineer",
+     "interests": "Reading, Hiking, Photography",
+     "address": "123 Main St, New York, NY, 10001",
+     "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGUlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D",
+     "instagram": "brian-lara/",
+     "linkedin": "brianlara"
+    },
+    {
+      "id": 3,
+      "name": "Jane Smith",
+      "age": 35,
+      "location": "Los Angeles",
+      "occupation": "Graphic Designer",
+      "interests": "Traveling, Painting, Cooking",
+      "address": "456 Elm St, Los Angeles, CA, 90001",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGUlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D",
+      "instagram": "brian-lara/",
+      "linkedin": "brianlara"
+    },
+    {
+      "id": 4,
+      "name": "Michael Johnson",
+      "age": 35,
+      "location": "Chicago",
+      "occupation": "Marketing Manager",
+      "interests": "Sports, Movies, Music",
+      "address": "789 Oak St, Chicago, IL, 60601",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGUlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D",
+      "instagram": "brian-lara/",
+      "linkedin": "brianlara"
+    }
+  ]
+  

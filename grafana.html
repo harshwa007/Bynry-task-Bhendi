@@ -1,0 +1,53 @@
+<<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <script>
+       /* {% comment %} document.addEventListener('DOMContentLoaded', function() {
+            var iframe = document.getElementById('grafanaDashboard');
+            var dashboardURL = "http://localhost:3000/d/ceagfmrtgx91cc/new-dashboard?orgId=1&from=2025-01-19T05:12:28.337Z&to=2025-01-19T11:12:28.337Z&timezone=browser";
+            
+            var apiToken = 'Bearer glsa_lNuWyNJe6vCXiMqc9DxxB1yeagNlYtlx_6e9065eeN';
+            iframe.src = dashboardURL;
+            iframe.onload = function() {
+                iframe.contentWindow.postMessage({ message: 'set_token', token: apiToken }, '*');
+            };
+        }); {% endcomment %}*/
+
+        async function loginToGrafana(username, password) {
+            const response = await fetch('http://localhost:3000/d/ceagfmrtgx91cc/new-dashboard?orgId=1&from=2025-01-19T05:12:28.337Z&to=2025-01-19T11:12:28.337Z&timezone=browser', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    user: username,
+                    password: password,
+                }),
+                credentials: 'include', // Important to include cookies
+            });
+        
+            if (response.ok) {
+                console.log('Logged in successfully');
+                // Now you can set the iframe source
+                document.getElementById('grafanaDashboard').src = 'http://localhost:3000/d/ceagfmrtgx91cc/new-dashboard?orgId=1&from=2025-01-19T05:12:28.337Z&to=2025-01-19T11:12:28.337Z&timezone=browser';
+            } else {
+                console.error('Login failed');
+            }
+        }
+        loginToGrafana('admin', 'root');
+    </script>
+    <body>
+        <iframe id="grafanaDashboard" width="100%" height="600px"></iframe>
+    </body>
+</html>>
